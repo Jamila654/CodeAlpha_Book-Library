@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Library</title>
+    <link rel="stylesheet" href="./syle.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Book Library</h1>
+      <div class="search-container">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search for books..."
+        />
+        <button id="search-button">Search</button>
+        <a href="./borrow.html" target="_blank"><button>Borrow</button></a>
+        <select id="categories-dropdown">
+            <option value="" disabled selected>Select Book Category 🔻 </option>
+            <option value="fiction">Fiction</option>
+            <option value="non-fiction">Non-fiction</option>
+            <option value="science">Science</option>
+            <option value="history">History</option>
+            <option value="biography">Biography</option>
+            <option value="fantasy">Fantasy</option>
+          </select>
+      </div>
+      <div id="books-container"></div>
+    </div>
+    <footer>
+      <p>&copy; 2024 Book Library by Jamila Yaqoob Dhedhi</p>
+    </footer>
+  </body>
+  <script src="./index.js"></script>
+</html>
+
+
+
+
+
+
+
+
+ 
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Borrow a Book</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Borrow a Book</h1>
+      <form id="borrow-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required />
+        
+        <label for="book">Book Title:</label>
+        <input type="text" id="book" name="book" placeholder="Enter book title" required />
+        
+        <label for="date">Borrow Date:</label>
+        <input type="date" id="date" name="date" required />
+        
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script>
+      document.getElementById("borrow-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        alert("Borrowing successful!");
+        this.reset();
+      });
+    </script>
+  </body>
+</html>
