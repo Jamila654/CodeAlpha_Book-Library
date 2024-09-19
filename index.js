@@ -52,7 +52,3 @@ const displayBooks = (books) => {
 
 
 
-
-
-
-
